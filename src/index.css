@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+   --tw-bg-opacity: 1;
+    background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
+    min-height: 100vh;
+  }
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
