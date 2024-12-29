@@ -1,7 +1,4 @@
-import Slider from "react-slick";
-
 import CardSlider from "./components/CardSlider";
-
 const App = () => {
   return (
     <div>

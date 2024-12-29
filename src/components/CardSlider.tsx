@@ -2,8 +2,23 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const CardSlider = () => {
-  const settings = {
+//Typing ...;
+type DataType = {
+  name: string;
+  img: string;
+  reviews: string;
+}[];
+
+type SettingsType = {
+  dots: boolean;
+  infinite: boolean;
+  speed: number;
+  slidesToShow: number;
+  slidesToScroll: number;
+};
+
+const CardSlider: React.FC = () => {
+  const settings: SettingsType = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -36,7 +51,7 @@ const CardSlider = () => {
 
 export default CardSlider;
 
-const data = [
+const data: DataType = [
   {
     name: "iPhone 14 Pro Max",
     img: "https://www.backmarket.fr/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D1920/https://d2e6ccujb3mkqf.cloudfront.net/b614ec1b-0de9-4e23-9e1f-e6eb2deb68f8-1_b4781e45-ec7c-4650-ac43-72def6d5f5d6.jpg",
